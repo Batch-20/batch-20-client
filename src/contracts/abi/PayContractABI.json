@@ -1,0 +1,76 @@
+[
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "owner",
+		"outputs": [
+			{
+				"name": "",
+				"type": "address"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"components": [
+					{
+						"name": "user",
+						"type": "address"
+					},
+					{
+						"name": "tokenValue",
+						"type": "uint256"
+					}
+				],
+				"name": "_signersData",
+				"type": "tuple[]"
+			},
+			{
+				"name": "_totalAmountToken",
+				"type": "uint256"
+			},
+			{
+				"name": "_tokenAddress",
+				"type": "address"
+			}
+		],
+		"name": "newTokenPayment",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"name": "payer",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"name": "tokenAmount",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "tokenAddress",
+				"type": "address"
+			}
+		],
+		"name": "payment",
+		"type": "event"
+	}
+]
